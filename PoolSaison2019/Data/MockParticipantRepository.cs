@@ -17,6 +17,7 @@ namespace PoolSaison2019.Data
                 new Participant() { Id = 2, Nom = "Nom2", Gains = 2, Gains_totaux = 2, Points = 2, Rang = 2, Rang_semaine_passee = 2};
                 new Participant() { Id = 3, Nom = "Nom3", Gains = 3, Gains_totaux = 3, Points = 3, Rang = 3, Rang_semaine_passee = 3};
                 new Participant() { Id = 4, Nom = "Nom4", Gains = 4, Gains_totaux = 4, Points = 4, Rang = 4, Rang_semaine_passee = 4};
+                new Participant() { Id = 4, Nom = "Nom5", Gains = 5, Gains_totaux = 5, Points = 5, Rang = 5, Rang_semaine_passee = 5};
             };
         }
         public Task Add(Participant entity)
