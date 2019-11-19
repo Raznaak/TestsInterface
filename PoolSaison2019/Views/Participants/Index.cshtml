@@ -1,0 +1,27 @@
+﻿@model IEnumerable<PoolSaison2019.Models.Participant>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Participants";
+}
+
+<h1>Liste des participants</h1>
+<div class="container">
+    @foreach (var item in Model.OrderBy(item => item.Rang))
+    {
+        {
+            <div class="badge">
+                <h2>#@item.Rang @item.Nom</h2>
+                <h3>Points</h3>
+                <p>@item.Points</p>
+                <h3>Gains</h3>
+                <p>@item.Gains$</p>
+                <h3>Gains totaux</h3>
+                <p>@item.Gains_totaux</p>
+                <h3>Rang de la semaine passée</h3>
+                <p>@item.Rang_semaine_passee</p>
+            </div>
+        }
+    }
+</div>
